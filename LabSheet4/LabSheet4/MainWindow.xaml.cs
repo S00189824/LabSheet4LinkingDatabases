@@ -18,13 +18,19 @@ namespace LabSheet4
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
+    /// 
+
+        public enum Stocklevel { Low, Normal, Overstocked}
+
     public partial class MainWindow : Window
     {
-        
+
+        public NORTHWNDEntities NW;
 
         public MainWindow()
         {
             InitializeComponent();
+            NW = new NORTHWNDEntities();
         }
 
         private void lbxSuppliers_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -34,7 +40,19 @@ namespace LabSheet4
 
         private void lbxStock_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            //What was selected =- Low, Normal, Overstocked
 
+            string stocklevel = lbxStock.SelectedItem as string; //Eg - Low
+
+            if (stocklevel == "Low")
+            {
+                var query = from p in NW.Products
+                            where p.UnitsInStock < 50
+                            select p.ProductName;
+
+                lbxProducts.ItemsSource = query.ToList();
+
+            }
         }
 
         private void lbxCountries_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -44,7 +62,7 @@ namespace LabSheet4
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            
+            lbxStock.ItemsSource = Enum.GetNames(typeof(Stocklevel));
         }
     }
 }

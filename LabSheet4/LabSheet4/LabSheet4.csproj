@@ -14,6 +14,7 @@
     <WarningLevel>4</WarningLevel>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -26,7 +27,6 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -80,87 +80,87 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Category.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>North.tt</DependentUpon>
     </Compile>
     <Compile Include="Contact.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>North.tt</DependentUpon>
     </Compile>
     <Compile Include="Customer.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>North.tt</DependentUpon>
     </Compile>
     <Compile Include="CustomerDemographic.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>North.tt</DependentUpon>
     </Compile>
     <Compile Include="Customers_By_City_Result.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>North.tt</DependentUpon>
     </Compile>
     <Compile Include="CustOrderHist_Result.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>North.tt</DependentUpon>
     </Compile>
     <Compile Include="CustOrdersDetail_Result.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>North.tt</DependentUpon>
     </Compile>
     <Compile Include="CustOrdersOrders_Result.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>North.tt</DependentUpon>
     </Compile>
     <Compile Include="Employee.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>North.tt</DependentUpon>
     </Compile>
     <Compile Include="Employee_Sales_by_Country_Result.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>North.tt</DependentUpon>
     </Compile>
     <Compile Include="Get_Customer_And_Orders_Result.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>North.tt</DependentUpon>
     </Compile>
-    <Compile Include="Model1.cs">
+    <Compile Include="North.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>North.tt</DependentUpon>
     </Compile>
     <Compile Include="Order.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>North.tt</DependentUpon>
     </Compile>
     <Compile Include="Order_Detail.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>North.tt</DependentUpon>
     </Compile>
     <Compile Include="Product.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>North.tt</DependentUpon>
     </Compile>
     <Compile Include="ProductsUnderThisUnitPrice_Result.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>North.tt</DependentUpon>
     </Compile>
     <Compile Include="Region.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>North.tt</DependentUpon>
     </Compile>
     <Compile Include="SalesByCategory_Result.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>North.tt</DependentUpon>
     </Compile>
     <Compile Include="Sales_by_Year_Result.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>North.tt</DependentUpon>
     </Compile>
     <Compile Include="Shipper.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>North.tt</DependentUpon>
     </Compile>
     <Compile Include="sp_helpdiagramdefinition_Result.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>North.tt</DependentUpon>
     </Compile>
     <Compile Include="sp_helpdiagrams_Result.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>North.tt</DependentUpon>
     </Compile>
     <Compile Include="Supplier.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>North.tt</DependentUpon>
     </Compile>
     <Compile Include="sysdiagram.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>North.tt</DependentUpon>
     </Compile>
     <Compile Include="Ten_Most_Expensive_Products_Result.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>North.tt</DependentUpon>
     </Compile>
     <Compile Include="Territory.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>North.tt</DependentUpon>
     </Compile>
     <Compile Include="Whole_Or_Partial_Customers_Set_Result.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>North.tt</DependentUpon>
     </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -176,15 +176,15 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Model1.Context.cs">
+    <Compile Include="North.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Model1.Context.tt</DependentUpon>
+      <DependentUpon>North.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Model1.Designer.cs">
+    <Compile Include="North.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Model1.edmx</DependentUpon>
+      <DependentUpon>North.edmx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
@@ -203,12 +203,12 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EntityDeploy Include="Model1.edmx">
+    <EntityDeploy Include="North.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
+      <LastGenOutput>North.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="Model1.edmx.diagram">
-      <DependentUpon>Model1.edmx</DependentUpon>
+    <None Include="North.edmx.diagram">
+      <DependentUpon>North.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -218,25 +218,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Model1.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>Model1.Context.cs</LastGenOutput>
-      <DependentUpon>Model1.edmx</DependentUpon>
-    </Content>
-    <Content Include="Model1.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Model1.edmx</DependentUpon>
-      <LastGenOutput>Model1.cs</LastGenOutput>
-    </Content>
-    <Content Include="NORTHWND %281%29.MDF">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="NORTHWND %281%29_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>NORTHWND %281%29.MDF</DependentUpon>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
@@ -252,6 +233,25 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="North.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>North.Context.cs</LastGenOutput>
+      <DependentUpon>North.edmx</DependentUpon>
+    </Content>
+    <Content Include="North.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>North.edmx</DependentUpon>
+      <LastGenOutput>North.cs</LastGenOutput>
+    </Content>
+    <Content Include="NORTHWND.MDF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="NORTHWND_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>NORTHWND.MDF</DependentUpon>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
