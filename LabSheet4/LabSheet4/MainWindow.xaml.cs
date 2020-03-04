@@ -20,6 +20,8 @@ namespace LabSheet4
     /// </summary>
     public partial class MainWindow : Window
     {
+        
+
         public MainWindow()
         {
             InitializeComponent();
@@ -38,6 +40,11 @@ namespace LabSheet4
         private void lbxCountries_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            
         }
     }
 }
