@@ -63,6 +63,24 @@ namespace LabSheet4
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             lbxStock.ItemsSource = Enum.GetNames(typeof(Stocklevel));
+
+            var query1 = from s in NW.Suppliers
+                         orderby s.CompanyName
+                         select new
+                         {
+                             SupplierName = s.CompanyName,
+                             SupplierId = s.SupplierID,
+                             country = s.Country
+                         };
+
+
+            lbxSuppliers.ItemsSource = query1.ToList();
+
+            var query2 = query1
+                .OrderBy(s => s.country)
+                .Select(s => s.country);
+
+            var countries = query2.ToList();
         }
     }
 }

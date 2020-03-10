@@ -18,7 +18,6 @@ C:\Users\S00189824\Documents\GitHub\LabSheet4LinkingDatabases\LabSheet4\LabSheet
 C:\Users\S00189824\Documents\GitHub\LabSheet4LinkingDatabases\LabSheet4\LabSheet4\obj\Debug\LabSheet4.g.resources
 C:\Users\S00189824\Documents\GitHub\LabSheet4LinkingDatabases\LabSheet4\LabSheet4\obj\Debug\LabSheet4.Properties.Resources.resources
 C:\Users\S00189824\Documents\GitHub\LabSheet4LinkingDatabases\LabSheet4\LabSheet4\obj\Debug\LabSheet4.csproj.GenerateResource.cache
-C:\Users\S00189824\Documents\GitHub\LabSheet4LinkingDatabases\LabSheet4\LabSheet4\obj\Debug\LabSheet4.csproj.CoreCompileInputs.cache
 C:\Users\S00189824\Documents\GitHub\LabSheet4LinkingDatabases\LabSheet4\LabSheet4\obj\Debug\LabSheet4.csproj.CopyComplete
 C:\Users\S00189824\Documents\GitHub\LabSheet4LinkingDatabases\LabSheet4\LabSheet4\obj\Debug\LabSheet4.exe
 C:\Users\S00189824\Documents\GitHub\LabSheet4LinkingDatabases\LabSheet4\LabSheet4\obj\Debug\LabSheet4.pdb
