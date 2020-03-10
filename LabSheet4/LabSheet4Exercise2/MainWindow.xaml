@@ -14,24 +14,25 @@
             <RowDefinition Height="3*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="198*"/>
-            <ColumnDefinition Width="326*"/>
-            <ColumnDefinition Width="23*"/>
-            <ColumnDefinition Width="47*"/>
-            <ColumnDefinition Width="198*"/>
+            <ColumnDefinition Width="32*"/>
+            <ColumnDefinition Width="273*"/>
+            <ColumnDefinition Width="91*"/>
+            <ColumnDefinition Width="271*"/>
+            <ColumnDefinition Width="125*"/>
+
+
+
         </Grid.ColumnDefinitions>
 
 
-        <ListBox x:Name="lbxStock" SelectionChanged="lbxStock_SelectionChanged" Grid.Row="1" Margin="10"/>
-        <ListBox x:Name="lbxSuppliers" DisplayMemberPath="SupplierName" SelectedValuePath="SupplierID" SelectionChanged="lbxSuppliers_SelectionChanged" Grid.Row="1" Grid.Column="1" Margin="10" Grid.ColumnSpan="3"/>
-        <ListBox x:Name="lbxCountries" SelectionChanged="lbxCountries_SelectionChanged" Grid.Column="4" Grid.Row="1" Margin="10"/>
+        <ListBox Grid.Row="1" Margin="10" Name="lbxCustomers" SelectionChanged="lbxCustomers_SelectionChanged" Grid.ColumnSpan="3"/>
+        <ListBox Grid.Row="1" Grid.Column="3" Margin="10" Name="lbxOrders" SelectionChanged="lbxOrders_SelectionChanged" Grid.ColumnSpan="2"/>
+        <DataGrid Grid.Row="3" Margin="10" Name="dgOrderDetails" Grid.ColumnSpan="3"/>
 
-        <ListBox x:Name="lbxProducts" Grid.ColumnSpan="5" Grid.Row="3" Margin="10"/>
+        <Label Content="Customers" Margin="131,13,72,13" Grid.Column="1"/>
+        <Label Content="Order Summary" Grid.Column="3" Margin="148,13,23.412,13"/>
+        <Label Content="Order Details" Grid.Row="2" Grid.ColumnSpan="2" Grid.Column="2" Margin="49,13,229.412,14"/>
 
-        <Label Content="Stock Level" Grid.Row="0" Grid.Column="0" Margin="64,13"/>
-        <Label Content="Suppliers" Grid.Row="0" Grid.Column="1" Margin="168,13,98,13"/>
-        <Label Content="country" Grid.Row="0" Grid.Column="4" Margin="74,13"/>
-        <Label Content="Products" Grid.Row="2" HorizontalAlignment="Center" Grid.Column="1" Margin="170,13,100,14"/>
-        <Label Content="Products" Grid.Row="2" HorizontalAlignment="Center" Grid.Column="1" Margin="170,13,100,14"/>
+
     </Grid>
 </Window>

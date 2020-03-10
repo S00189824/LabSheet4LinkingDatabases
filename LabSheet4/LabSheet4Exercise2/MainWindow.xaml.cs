@@ -20,9 +20,16 @@ namespace LabSheet4Exercise2
     /// </summary>
     public partial class MainWindow : Window
     {
+        AdventureLiteEntities db = new AdventureLiteEntities();
+
+
         public MainWindow()
         {
             InitializeComponent();
+
+            
         }
+
+        
     }
 }
