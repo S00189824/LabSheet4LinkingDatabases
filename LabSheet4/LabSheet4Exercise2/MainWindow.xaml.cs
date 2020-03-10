@@ -30,6 +30,47 @@ namespace LabSheet4Exercise2
             
         }
 
-        
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            var query = from o in db.SalesOrderHeaders
+                        orderby o.Custom.CompanyName
+                        select o.Customer.CompanyName;
+
+            var result = query.ToList();
+
+            lbxCustomers.ItemsSource = query.ToList().Distinct();
+        }
+
+        private void LbxCustomers_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            string customer = lbxCustomers.SelectedItem as string;
+
+            if(customer != null)
+            {
+
+                //var query = from o in db.SalesOrderHeaders
+                //            where o.Customer.CompanyName.Equals(customer)
+                //            select new OrderSummary
+                //            {
+                //                SalesOrderID = o.SalesOrderID,
+                //                OrderDate = o.OrderDate,
+                //                TotalDue = o.TotalDue
+                //            };
+
+
+
+
+                var query = from o in db.SalesOrderHeaders
+                            where o.Customer.CompanyName.Equals(customer)
+                            select o;
+
+                lbxOrders.ItemsSource = query.ToList();
+            }
+        }
+
+        private void LbxOrders_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }

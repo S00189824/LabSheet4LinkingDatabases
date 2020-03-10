@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LabSheet4Exercise2"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800" Loaded="Window_Loaded">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
@@ -25,9 +25,9 @@
         </Grid.ColumnDefinitions>
 
 
-        <ListBox Grid.Row="1" Margin="10" Name="lbxCustomers" SelectionChanged="lbxCustomers_SelectionChanged" Grid.ColumnSpan="3"/>
-        <ListBox Grid.Row="1" Grid.Column="3" Margin="10" Name="lbxOrders" SelectionChanged="lbxOrders_SelectionChanged" Grid.ColumnSpan="2"/>
-        <DataGrid Grid.Row="3" Margin="10" Name="dgOrderDetails" Grid.ColumnSpan="3"/>
+        <ListBox Grid.Row="1" Margin="10" Name="lbxCustomers" Grid.ColumnSpan="3" SelectionChanged="LbxCustomers_SelectionChanged"/>
+        <ListBox Grid.Row="1" Grid.Column="3" Margin="10" Name="lbxOrders" Grid.ColumnSpan="2" SelectionChanged="LbxOrders_SelectionChanged"/>
+        <DataGrid Grid.Row="3" Margin="10,10,0,10" Name="dgOrderDetails" Grid.ColumnSpan="5" HorizontalAlignment="Left" Width="772"/>
 
         <Label Content="Customers" Margin="131,13,72,13" Grid.Column="1"/>
         <Label Content="Order Summary" Grid.Column="3" Margin="148,13,23.412,13"/>
